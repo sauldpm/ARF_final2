@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#C8000000</color>
+    <color name="colorAccent">#D8211B</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="gris">#D8D8D8</color>
+    <color name="background_footer">#BD000000</color>
+    <color name="dividerColor">#80CBC4</color>
+    <color name="list_item_title">#AAAAAA</color>
+    <color name="list_group_title">#808080</color>
+    <color name="verde">#199910</color>
+    <color name="azulAgua">#01A9DB</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="rojo">#b72121</color>
+    <color name="black">#000</color>
+    <color name="verde_arf">#199910</color>
+    <color name="rojo_arf">#b72121</color>
+</resources>

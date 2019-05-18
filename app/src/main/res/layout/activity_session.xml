@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu.MenuActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <Button
+        android:id="@+id/presupuesto_en_camara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/proyectos_item"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="#00000000"
+        android:background="#00000000"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="left|bottom" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|center"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        app:fabSize="mini"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/guardarFotos"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_save_white_30dp"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="left|top"
+        app:fabSize="mini"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/grabar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="right|bottom"
+        app:fabSize="mini"/>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_session" />
+
+    <!--<include layout="@layout/load" />-->
+</android.support.design.widget.CoordinatorLayout>

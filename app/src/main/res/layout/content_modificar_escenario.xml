@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de escenario"
+            android:textAppearance="@style/Base.Animation.AppCompat.Dialog"
+            android:textSize="@dimen/registros_text" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/modificar_escenario_nombre"
+            android:singleLine="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Típo de habitación"
+            android:textAppearance="@style/Base.Animation.AppCompat.Dialog"
+            android:textSize="@dimen/registros_text"
+            android:layout_marginTop="27dp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/modificar_escenario_tipo"
+            android:singleLine="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamaño"
+            android:textAppearance="@style/Base.Animation.AppCompat.Dialog"
+            android:textSize="@dimen/registros_text"
+            android:layout_marginTop="27dp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/modificar_escenario_tamano"
+            android:singleLine="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Típo de muebles"
+            android:textAppearance="@style/Base.Animation.AppCompat.Dialog"
+            android:textSize="@dimen/registros_text"
+            android:layout_marginTop="27dp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/modificar_escenario_tipo_m"
+            android:singleLine="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presupesto(mxn)"
+            android:textAppearance="@style/Base.Animation.AppCompat.Dialog"
+            android:textSize="@dimen/registros_text"
+            android:layout_marginTop="27dp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/modificar_escenario_presupuesto"
+            android:singleLine="true"
+            android:ems="10"
+            android:inputType="numberDecimal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Modificar"
+                android:textSize="15dp"
+                android:id="@+id/btn_enviar_modificar_escenario"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

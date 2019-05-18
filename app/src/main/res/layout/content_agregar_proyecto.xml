@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AgregarProyectoActivity"
+    tools:showIn="@layout/activity_agregar_proyecto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textAppearance="@style/Base.Animation.AppCompat.Dialog"
+            android:textSize="@dimen/registros_text" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/client_firstname_agregar"
+            android:singleLine="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellido"
+            android:textAppearance="@style/Base.Animation.AppCompat.Dialog"
+            android:textSize="@dimen/registros_text"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/client_lastname_agregar"
+            android:singleLine="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numero de Telefono"
+            android:textAppearance="@style/Base.Animation.AppCompat.Dialog"
+            android:textSize="@dimen/registros_text"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/client_phone_agregar"
+            android:inputType="phone"
+            android:digits="1234567890+()"
+            android:singleLine="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo electronico"
+            android:textAppearance="@style/Base.Animation.AppCompat.Dialog"
+            android:textSize="@dimen/registros_text"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/client_email_agregar"
+            android:singleLine="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Agregar"
+                android:textSize="15dp"
+                android:id="@+id/boton_enviar_agregar"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

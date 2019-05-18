@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Escenarios.GuardarInfoEscenarios">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+                <ImageButton
+                    android:id="@+id/btn_cancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:backgroundTint="@color/blanco"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textViewTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar Información de un escenario"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewCorreoUsr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingrese información de escenario"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                        <EditText
+                            android:id="@+id/et_nombreProyecto"
+                            android:hint="@string/nombreEscenario"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:background="@color/colorWhite"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:maxLength="30"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                        <EditText
+                            android:id="@+id/spinner_tipoHab"
+                            android:hint="@string/tipo_habitacion"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:background="@color/colorWhite"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:maxLength="20"
+                            android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                        <EditText
+                            android:id="@+id/spinner_tam"
+                            android:hint="@string/tam_habitacion"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:background="@color/colorWhite"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:text=""
+                            android:maxLength="20"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                        <EditText
+                            android:id="@+id/spinner_muebles"
+                            android:hint="@string/tipo_Muebles"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:background="@color/colorWhite"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:maxLength="20"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/image_button_margin">
+                        <EditText
+                            android:id="@+id/ed_presupuesto"
+                            android:hint="@string/presupuesto"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:background="@color/colorWhite"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text=""
+                            android:maxLength="15"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_guardarInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="Guardar"
+                    android:textSize="11sp" />
+        </LinearLayout>
+</LinearLayout>

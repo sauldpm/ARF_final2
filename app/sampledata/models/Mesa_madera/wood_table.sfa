@@ -1,0 +1,86 @@
+{
+  materials: [
+    {
+      name: 'Wood_Table',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.77944999999999998,
+            0.77944999999999998,
+            0.77944999999999998,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 0.14280000000000001,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'Wood_Table_Glass',
+      parameters: [
+        {
+          baseColor: 'Wood_Table_N',
+        },
+        {
+          baseColorTint: [
+            0.64000000000000001,
+            0.64000000000000001,
+            0.64000000000000001,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.14280000000000001,
+        },
+        {
+          opacity: 0.40000000000000002,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/Mesa_madera/wood_table.obj',
+    name: 'wood_table',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/Mesa_madera/textures/Wood_Table_C_2.jpg',
+      name: 'Wood_Table_C_2',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'textures/Wood_Table_C_2.jpg',
+    },
+    {
+      file: 'sampledata/models/Mesa_madera/textures/Wood_Table_N.jpg',
+      name: 'Wood_Table_N',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'textures/Wood_Table_N.jpg',
+    },
+  ],
+  version: '0.52:1',
+}

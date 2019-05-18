@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saul.arf">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Video.TutorialActivity"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".Resumen.TotalActivity" />
+        <activity android:name=".Resumen.ResumenActivity" />
+        <activity
+            android:name=".Menu.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:screenOrientation="landscape"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Escenarios.ModificarEscenarioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Escenarios.FotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Escenarios.FotosEscenario"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecuperarPassword.ResetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecuperarPassword.PasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registro.RegistroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MisProyectosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AgregarProyectoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Proyectos.ModificarProyectoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Escenarios.Load"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MisEscenariosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Escenarios.GuardarInfoEscenarios"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ScenarioCamara.LoadSessionActivity" />
+        <activity android:name=".SessionActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.ar.codelab.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+    </application>
+
+</manifest>

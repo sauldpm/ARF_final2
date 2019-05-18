@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_arf"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/w_02"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_main"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="99dp"
+        android:background="@drawable/shadow"
+        android:elevation="525dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="411dp"
+            android:layout_marginLeft="-11dp"
+            android:layout_marginRight="11dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textvARF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp"
+                android:text="AUGMENTED REALITY FURNITURE"
+                android:textAlignment="textStart"
+                android:textColor="@color/blanco"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:text="Seleccione una opción"
+                android:textAlignment="textStart"
+                android:textColor="@color/blanco" />
+
+            <ViewFlipper
+                android:id="@+id/arf_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="271dp"
+                android:layout_marginTop="22dp"></ViewFlipper>
+
+            <LinearLayout
+                android:id="@+id/footer_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAcceso"
+                    android:layout_width="108dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="11dp"
+                    android:drawableLeft="@drawable/icon_login"
+                    android:text="Iniciar sesión"
+                    android:textSize="9dp" />
+
+                <Button
+                    android:id="@+id/btnRegistro"
+                    android:layout_width="107dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/icon_registro"
+                    android:text="Registrar cuenta"
+                    android:textSize="9dp" />
+
+                <Button
+                    android:id="@+id/btnTrialArf"
+                    android:layout_width="108dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/icon_trial"
+                    android:text="Versión gratis"
+                    android:textSize="9dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

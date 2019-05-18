@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:id="@+id/nav_view"
+    android:layout_height="@dimen/nav_header_height"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_menu"
+    android:paddingTop="@dimen/activity_menu"
+    android:paddingRight="@dimen/activity_menu"
+    android:paddingBottom="@dimen/activity_menu"
+        android:background="@color/colorPrimaryDark">
+
+        <!--LinearLayout
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:inputType="textPersonName"
+                android:maxLength="40"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="@color/colorPrimaryDark"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="@color/colorPrimaryDark"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/proyecto"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/interior"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/tama_o"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/muebles"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/presupuesto_menu"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+        </LinearLayout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/email_user"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="textPersonName"
+            android:maxLength="40"
+            android:text="Correo@usuario.com"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/name_user_arf"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="textPersonName"
+            android:maxLength="40"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            tools:text="Nombre Usuario" />
+        <EditText
+            android:id="@+id/id_user_arf"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="textPersonName"
+            android:maxLength="40"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/name_project"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="textPersonName"
+            android:maxLength="40"
+            android:paddingLeft="5dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/tipo_interior"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="textPersonName"
+            android:maxLength="40"
+            android:paddingLeft="5dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/escenary_size"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="textPersonName"
+            android:maxLength="40"
+            android:paddingLeft="5dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/tipo_muebles"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="textPersonName"
+            android:maxLength="40"
+            android:paddingLeft="5dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/presupuesto"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="textPersonName"
+            android:maxLength="40"
+            android:paddingLeft="5dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

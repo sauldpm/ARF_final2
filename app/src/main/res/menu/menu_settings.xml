@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ver_tutorial"
+        android:title="@string/proyectos_verTutorial">
+    </item>
+    <item
+        android:id="@+id/cerrar_session_menu"
+        android:title="@string/proyectos_cerrar_sesion">
+    </item>
+</menu>

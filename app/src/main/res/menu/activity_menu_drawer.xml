@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/categorias_arf"
+            android:icon="@drawable/ic_interior"
+            android:title="Categorias" />
+        <item
+            android:id="@+id/subcategorias_arf"
+            android:icon="@drawable/ic_furniture"
+            android:title="Subcategorias" />
+        <item
+            android:id="@+id/mis_muebles"
+            android:icon="@drawable/ic_mis_muebles"
+            android:title="Mis muebles" />
+        <item
+            android:id="@+id/escenarios"
+            android:icon="@drawable/ic_escenarios"
+            android:title="Escenarios" />
+        <item
+            android:id="@+id/proyectos"
+            android:icon="@drawable/ic_projectos_arf"
+            android:title="Proyectos" />
+    </group>
+
+    <item android:title="Regresar a">
+        <menu>
+            <item
+                android:id="@+id/foto_arf"
+                android:icon="@drawable/ic_camera_arf"
+                android:title="Cámara" />
+            <item
+                android:id="@+id/cerrar_session"
+                android:icon="@drawable/ic_quit_arf"
+                android:title="Cerrar sesión" />
+        </menu>
+    </item>
+
+</menu>
